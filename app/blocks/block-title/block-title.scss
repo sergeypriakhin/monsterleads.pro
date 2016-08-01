@@ -1,0 +1,20 @@
+.block-title {
+    padding: 66px 0;
+
+    text-align: center;
+
+    background: url(/assets/images/block-title-bg.png) no-repeat;
+    background-size: cover;
+    &__header {
+        font-family: TheSerifYotaW5Plain, serif;
+        font-size: 40px;
+        font-weight: 100;
+
+        margin: 0;
+
+        text-align: center;
+        letter-spacing: 1px;
+
+        color: #ffffff;
+    }
+}

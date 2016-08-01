@@ -1,0 +1,31 @@
+.btn {
+    font-family: 'PT Sans';
+
+    border: none;
+    outline: none;
+}
+
+.btn--reg {
+	@extend .btn;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 49px;
+
+    width: 280px;
+    height: 49px;
+
+    text-align: center;
+
+    color: rgb( 51, 51, 51 );
+    border-radius: 24px;
+    background: #ffde4a;
+    background-image: linear-gradient(to bottom,  #ffde4a 0%,#ffb521 100%);
+    box-shadow: .5px .866px 2px 0px rgb( 0, 0, 0 );
+    text-shadow: 0px 1px 0px rgb( 255, 255, 255 );
+    @media (max-width: 420px) {
+        width: 200px;
+    }
+    &:hover {
+        background-image: linear-gradient(to bottom, #FFD620 0%,#ffb521 100%);
+    }
+}

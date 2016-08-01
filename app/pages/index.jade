@@ -1,0 +1,15 @@
+extends ../partials/layout-default
+
+block head
+	- var pageTitle = 'MonsterLead.pro';
+
+block header
+	include ../blocks/header/header
+
+block content
+	include ../blocks/block-title/block-title
+	main.container--flex
+		include ../blocks/article/article
+		include ../blocks/sidebar/sidebar
+block footer
+	include ../blocks/footer/footer

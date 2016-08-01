@@ -1,0 +1,29 @@
+.footer {
+    padding: 64px 0;
+
+    background-color: #ffffff;
+    &__container {
+        align-items: center;
+    }
+    &__copy {
+        font-size: 14px;
+
+        color: #cacaca;
+    }
+    &__imgs {
+        display: inline-flex;
+
+        flex-grow: 1;
+        justify-content: flex-end;
+        img {
+            margin-left: 25px;
+        }
+        @media (max-width: 450px) {
+            flex-direction: column;
+            img {
+                width: 120px;
+                margin: 10px 0;
+            }
+        }
+    }
+}

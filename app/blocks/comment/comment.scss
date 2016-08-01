@@ -1,0 +1,74 @@
+.comment {
+    &__init {
+        margin-bottom: 40px;
+        // @media (max-width: 420px) {
+        //     text-align: center;
+        // }
+    }
+    &__group {
+        margin-bottom: 18px;
+        padding: 20px;
+
+        background: #ffffff;
+        box-shadow: 0 0 1px 1px rgba(0,0,0,.2);
+        &:hover {
+            & > .comment__reply {
+                // display: block;
+                opacity: 1;
+            }
+        }
+        &--insert {
+            position: relative;
+
+            margin-left: 30px;
+            &:before {
+                position: absolute;
+                left: -30px;
+
+                width: 22px;
+                height: 16px;
+
+                content: '';
+
+                background: transparent url('../images/com-arr.png') left top no-repeat;
+            }
+        }
+    }
+    &__user {
+        font-family: 'PT Sans';
+        font-size: 16px;
+        font-weight: bold;
+
+        float: left;
+
+        color: rgb( 48, 48, 48 );
+    }
+    &__date {
+        font-family: 'PT Sans';
+        font-size: 14px;
+
+        float: right;
+
+        color: rgb( 153, 153, 153 );
+    }
+    &__reply {
+        float: right;
+        font-size: 14px;
+        margin-right: 20px;
+        line-height: 1;
+        text-decoration: none;
+        color: #337e99;
+        font-weight: 700;
+        // display: none;
+        opacity: 0;
+        position: relative;
+        transition: opacity 0.3s ease;
+        i { padding-right: 5px; }
+    }
+    &__content {
+        clear: both;
+
+        margin: 0;
+        padding-top: 10px;
+    }
+}

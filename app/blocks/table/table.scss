@@ -1,0 +1,46 @@
+.table--responsive {
+	background-color: #fff;
+	padding-top: 40px;
+	overflow-x: auto;
+}
+table {
+	position: relative;
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+	min-width: 730px;
+	&:before {
+		content: 'Конверсии';
+		position: absolute;
+		top: -25px;
+		left: 241px;
+		padding: 5px 10px;
+		background-color: #69b128;
+		color: #fff;
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
+	}
+	thead {
+		color: #a2a2a2;
+		th i {
+			padding: 0px 5px;
+			color: #a2a2a2;
+		}
+	}
+	tr {
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+		td,th {
+			padding: 10px 0;
+		}
+	}
+}
+.text-green {
+	color: #69b129;
+}
+.bg-green {
+	background: rgba(105, 177, 41, 0.22);
+}
+.green {
+	@extend .text-green;
+    @extend .bg-green;
+}

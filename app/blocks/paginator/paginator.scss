@@ -1,0 +1,16 @@
+.paginator {
+	text-align: center;
+	&__item {
+		display: inline-block;
+		border: 1px solid rgb( 225, 233, 239 );
+		padding: 15px;
+		margin: 0 10px;
+		text-decoration: none;
+		color: #0067a6;
+		font-size: 16px;
+		&--active {
+			background-color: #337e99;
+			color: #fff;
+		}
+	}
+}
